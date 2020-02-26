@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    background-color: whitesmoke;
+    /* background-image: url('classroom.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+#flipper{
+    background-color: pink;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    border: 1px color #333;
+    border-radius: 10px;
+    padding:0.5em;
+    margin: 1em;
+    align-self: left;
+    width: 12em;
+    position: absolute;
+    -webkit-box-shadow: 5px 5px 5px -2px #000000; 
+    box-shadow: 5px 5px 15px -2px #000000;
+
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    border-right: 10px solid #333;
+    border-bottom: 10px solid #333;
+    border-radius: 25px;
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 1.5rem 1rem;
+    transition: transform 2s;
+    -webkit-box-shadow: 5px 5px 5px -2px #000000; 
+    box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.flipped{
+    transform: rotate(180deg);
+    transition: 2s;
+}
+
+.button{
+    background-color: #BBB;
+    /* border: 1px solid black; */
+    width: 30%;
+    /* height: auto; */
+    margin: 1%;
+    border-radius: 15px;
+    padding: 0.5rem;
+    -webkit-box-shadow: 5px 5px 5px -2px #000000; 
+    box-shadow: 5px 5px 15px -2px #000000;
+}
+.number{
+}
+.operator{
+    background-color: #999;
+}
+
+.display{
+width: 90%;
+height: 80px;
+margin: 25px 0px;
+background-color: #238912;
+border-radius: 5px;
+border-top: 3px solid #343;
+border-left: 3px solid #343;
+border-right: 1px solid #343;
+border-bottom: 1px solid #343;
+font-size: 56px;
+font-family: 'VT323', monospace;
+color: white;   
+overflow: hidden;
+text-align: right;
+padding: 1rem;
+}
